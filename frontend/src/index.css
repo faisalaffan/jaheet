@@ -1,0 +1,75 @@
+@import "tailwindcss";
+
+/*
+ * Admin layout overrides — restore browser-like defaults for elements
+ * that Tailwind's preflight (CSS reset) strips away.
+ * Scoped to .admin-layout so the public landing page gets clean preflight.
+ */
+.admin-layout h1 {
+  font-size: 2em;
+  font-weight: bold;
+  margin-block: 0.67em;
+}
+
+.admin-layout h2 {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-block: 0.83em;
+}
+
+.admin-layout h3 {
+  font-size: 1.17em;
+  font-weight: bold;
+  margin-block: 1em;
+}
+
+.admin-layout p {
+  margin-block: 1em;
+}
+
+.admin-layout table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.admin-layout th,
+.admin-layout td {
+  text-align: left;
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+}
+
+.admin-layout th {
+  font-weight: bold;
+}
+
+.admin-layout input,
+.admin-layout select,
+.admin-layout textarea {
+  border: 1px solid #ccc;
+  padding: 6px 8px;
+  border-radius: 4px;
+  margin-right: 8px;
+  font-size: inherit;
+  font-family: inherit;
+  background-color: white;
+  color: black;
+}
+
+.admin-layout button {
+  padding: 6px 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #f0f0f0;
+  cursor: pointer;
+  font-size: inherit;
+  font-family: inherit;
+}
+
+.admin-layout button:hover {
+  background-color: #e0e0e0;
+}
+
+.admin-layout a {
+  text-decoration: underline;
+}
